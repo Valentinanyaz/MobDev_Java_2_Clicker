@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     TextView reduceText;
     Button mainBtn;
     Button reduceBtn;
+    Button deleteBtn;
 
     private int score = 0;
     private int score1 = 0;
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         mainBtn = (Button) findViewById(R.id.mainBtn);
         reduceText = (TextView) findViewById(R.id.reduceText);
         reduceBtn = (Button) findViewById(R.id.reduceBtn);
+        deleteBtn = (Button) findViewById(R.id.deleteBtn);
 
 
         View.OnClickListener clickListener = new View.OnClickListener() {
@@ -49,6 +51,17 @@ public class MainActivity extends AppCompatActivity {
         };
 
         reduceBtn.setOnClickListener(clickListener1);
+
+        View.OnClickListener clickListener2 = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mainText.setText("Hello world");
+                reduceText.setText("Reduce");
+
+            }
+        };
+
+        deleteBtn.setOnClickListener(clickListener2);
     }
 }
 
