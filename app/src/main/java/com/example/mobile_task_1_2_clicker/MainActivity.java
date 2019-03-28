@@ -10,9 +10,12 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     TextView mainText;
+    TextView reduceText;
     Button mainBtn;
+    Button reduceBtn;
 
-    private long score = 0;
+    private int score = 0;
+    private int score1 = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +23,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mainText = (TextView) findViewById(R.id.mainText);
-        mainBtn = (Button) findViewById(R.id.button);
+        mainBtn = (Button) findViewById(R.id.mainBtn);
+        reduceText = (TextView) findViewById(R.id.reduceText);
+        reduceBtn = (Button) findViewById(R.id.reduceBtn);
 
 
         View.OnClickListener clickListener = new View.OnClickListener() {
@@ -34,6 +39,16 @@ public class MainActivity extends AppCompatActivity {
 
         mainBtn.setOnClickListener(clickListener);
 
+        View.OnClickListener clickListener1 = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                score1 --;
+                String r = "Кликов: " + score1;
+                reduceText.setText(r.toCharArray(),0,r.length());
+            }
+        };
+
+        reduceBtn.setOnClickListener(clickListener1);
     }
 }
 

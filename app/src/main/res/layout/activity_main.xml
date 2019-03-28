@@ -21,11 +21,23 @@
             android:layout_height="wrap_content"
             android:text="Hello World!"/>
 
-        <Button
-            android:id="@+id/button"
+        <TextView
+            android:id="@+id/reduceText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Button"/>
+            android:text="Reduce"/>
+
+        <Button
+            android:id="@+id/mainBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click to add"/>
+
+        <Button
+            android:id="@+id/reduceBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click to reduce"/>
 
     </LinearLayout>
 
