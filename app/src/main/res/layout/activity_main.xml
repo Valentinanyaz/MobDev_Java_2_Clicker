@@ -21,11 +21,6 @@
             android:layout_height="wrap_content"
             android:text="Hello World!"/>
 
-        <TextView
-            android:id="@+id/reduceText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Reduce"/>
 
         <Button
             android:id="@+id/mainBtn"

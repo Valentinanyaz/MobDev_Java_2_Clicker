@@ -10,13 +10,12 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     TextView mainText;
-    TextView reduceText;
     Button mainBtn;
     Button reduceBtn;
     Button deleteBtn;
 
     private int score = 0;
-    private int score1 = 0;
+    //private int score1 = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +24,6 @@ public class MainActivity extends AppCompatActivity {
 
         mainText = (TextView) findViewById(R.id.mainText);
         mainBtn = (Button) findViewById(R.id.mainBtn);
-        reduceText = (TextView) findViewById(R.id.reduceText);
         reduceBtn = (Button) findViewById(R.id.reduceBtn);
         deleteBtn = (Button) findViewById(R.id.deleteBtn);
 
@@ -44,9 +42,9 @@ public class MainActivity extends AppCompatActivity {
         View.OnClickListener clickListener1 = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                score1 --;
-                String r = "Кликов: " + score1;
-                reduceText.setText(r.toCharArray(),0,r.length());
+                score --;
+                String r = "Кликов: " + score;
+                mainText.setText(r.toCharArray(),0,r.length());
             }
         };
 
@@ -56,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 mainText.setText("Hello world");
-                reduceText.setText("Reduce");
+
 
             }
         };
