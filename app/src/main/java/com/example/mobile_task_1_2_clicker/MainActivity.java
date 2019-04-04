@@ -32,8 +32,32 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 score ++;
-                String s = "Кликов: " + score;
-                mainText.setText(s.toCharArray(),0, s.length());
+                if (score == 1)
+                {
+                    String s = "Кнопка нажата " + score + " раз";
+                    mainText.setText(s.toCharArray(),0, s.length());
+                }
+                else if (score == 2)
+                {
+                    String s = "Кнопка нажата " + score + " раза";
+                    mainText.setText(s.toCharArray(),0, s.length());
+                }
+                else if (score == 3)
+                {
+                    String s = "Кнопка нажата " + score +  " раза";
+                    mainText.setText(s.toCharArray(),0, s.length());
+                }
+                else if  (score == 4)
+                {
+                    String s = "Кнопка нажата " + score + " раза";
+                    mainText.setText(s.toCharArray(),0, s.length());
+                }
+                else
+                {
+                    String s = "Кнопка нажата " + score + " раз";
+                    mainText.setText(s.toCharArray(),0, s.length());
+                }
+
             }
         };
 
@@ -43,8 +67,31 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 score --;
-                String r = "Кликов: " + score;
-                mainText.setText(r.toCharArray(),0,r.length());
+                if (score == 1)
+                {
+                    String s = "Кнопка нажата " + score + " раз";
+                    mainText.setText(s.toCharArray(),0, s.length());
+                }
+                else if (score == 2)
+                {
+                    String s = "Кнопка нажата " + score + " раза";
+                    mainText.setText(s.toCharArray(),0, s.length());
+                }
+                else if (score == 3)
+                {
+                    String s = "Кнопка нажата " + score +  " раза";
+                    mainText.setText(s.toCharArray(),0, s.length());
+                }
+                else if  (score == 4)
+                {
+                    String s = "Кнопка нажата " + score + " раза";
+                    mainText.setText(s.toCharArray(),0, s.length());
+                }
+                else
+                {
+                    String s = "Кнопка нажата " + score + " раз";
+                    mainText.setText(s.toCharArray(),0, s.length());
+                }
             }
         };
 
