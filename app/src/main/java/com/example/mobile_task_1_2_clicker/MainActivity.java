@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextClock;
 import android.widget.TextView;
 
@@ -13,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     Button mainBtn;
     Button reduceBtn;
     Button deleteBtn;
+    ImageButton imgBtn;
 
     private int score = 0;
     //private int score1 = 0;
@@ -26,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         mainBtn = (Button) findViewById(R.id.mainBtn);
         reduceBtn = (Button) findViewById(R.id.reduceBtn);
         deleteBtn = (Button) findViewById(R.id.deleteBtn);
+        imgBtn = (ImageButton) findViewById(R.id.imgBtn);
 
 
         View.OnClickListener clickListener = new View.OnClickListener() {
@@ -107,6 +110,15 @@ public class MainActivity extends AppCompatActivity {
         };
 
         deleteBtn.setOnClickListener(clickListener2);
+
+        View.OnClickListener clickListener3 = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mainText.setText("I work!");
+
+            }
+        };
+        imgBtn.setOnClickListener(clickListener3);
     }
 }
 
